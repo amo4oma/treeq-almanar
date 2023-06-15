@@ -1103,17 +1103,42 @@ a:hover{
       color: #878787;
     }
     .copyright-text p a{
-      color: #ff5e14;
+      color: #104A47;
     }
     .footer-menu li {
       display: inline-block;
       margin-left: 20px;
     }
     .footer-menu li:hover a{
-      color: #ff5e14;
+      color: #104A47;
     }
     .footer-menu li a {
       font-size: 14px;
       color: #878787;
     }
-//textanimation 
+#about{
+ 
+}
+#value{
+  padding: 150px 20px;
+  background-image: url(./Assests/lighthouse.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  h1,p, ul{
+    position: relative;
+    z-index: 2;
+  
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 0;
+  }
+}

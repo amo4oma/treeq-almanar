@@ -100,7 +100,7 @@
                         });
                         clients.to(' .clients-yellow-line',8, {width : 700})
                         clients.from(' .hsa',8, {x : '100%', opacity:0})
-                        clients.from(' .alsaeed',8, {y : '150%'})
+                        clients.from(' .alsaeed',8, {y : '150%',opacity:0})
                         clients.from(' .journy',8, {y : '-100%', opacity:0} , 'last')
                         clients.from(' .beour',8, {opacity:0})
                         
