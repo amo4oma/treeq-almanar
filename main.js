@@ -120,3 +120,27 @@
           }
         });
       })(jQuery); // End of use strict
+
+
+
+
+      // local storage
+
+var element = document.getElementsByClassName('banner')
+var styles = window.getComputedStyle(element);
+var backgroundImage = styles.getPropertyValue('background-image');
+var imgElement = document.getElementById('myImage');
+
+localStorage.setItem('backgroundImageURL', imageURL);
+
+// Convert the image to a Base64-encoded string
+var canvas = document.createElement('canvas');
+canvas.width = imgElement.width;
+canvas.height = imgElement.height;
+var ctx = canvas.getContext('2d');
+ctx.drawImage(imgElement, 0, 0);
+var base64String = canvas.toDataURL();
+
+// Store the image string in the local storage
+localStorage.setItem('myImage', base64String);
+
